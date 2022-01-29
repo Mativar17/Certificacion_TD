@@ -10,7 +10,7 @@ Proyecto para optar a la certificación del programa Talento Digital para Chile.
 
 Gemfile incluido en el proyecto.
 
-* Configuration
+#### Configuration
 
 #### Database creation
 
