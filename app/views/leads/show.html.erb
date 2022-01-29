@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @lead.name %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @lead.last_name %>
+</p>
+
+<p>
+  <strong>Correo electrónico:</strong>
+  <%= @lead.email %>
+</p>
+
+<p>
+  <strong>Teléfono:</strong>
+  <%= @lead.phone_number %>
+</p>
+
+<p>
+  <strong>Estado (interesado, prospecto o cliente):</strong>
+  <%= @lead.status %>
+</p>
+
+<p>
+  <strong>Ingresado por:</strong>
+  <%= @lead.entered_by %>
+</p>
+
+<p>
+  <strong>Fecha de ingreso:</strong>
+  <%= @lead.entry_date %>
+</p>
+
+<p>
+  <strong>Conversaciones:</strong>
+  <%= @lead.conversation %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @lead.user.email %>
+</p>
+
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>

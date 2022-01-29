@@ -1,0 +1,64 @@
+<div class="container">
+  <%= form_with(model: lead) do |form| %>
+    <% if lead.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+
+        <ul>
+          <% lead.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :last_name %>
+      <%= form.text_field :last_name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </div>
+
+    <div class="field">
+      <%= form.label :phone_number %>
+      <%= form.text_field :phone_number %>
+    </div>
+
+    <div class="field">
+      <%= form.label :status %>
+      <%= form.text_field :status %>
+    </div>
+
+    <div class="field">
+      <%= form.label :entered_by %>
+      <%= form.text_field :entered_by %>
+    </div>
+
+    <div class="field">
+      <%= form.label :entry_date %>
+      <%= form.date_select :entry_date %>
+    </div>
+
+    <div class="field">
+      <%= form.label :conversation %>
+      <%= form.text_field :conversation %>
+    </div>
+
+    <!--<div class="field">
+      <%= form.label :user_id %>
+      <%= form.text_field :user_id %>
+    </div>-->
+
+    <div class="btn btn-success">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
